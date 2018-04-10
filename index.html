@@ -8,32 +8,31 @@
         <meta name="author" content="Yurii Koval">
         <link href="icons/html_css_js_favicon.png" rel="icon" type="image/x-icon">
         <title>HTML5, CSS3, JS</title>
+        <link href="css/index.css" rel="stylesheet">
     </head>
     <body>
         <header>
             <h1>
                 Lv-306.HTML5
                 <br>
-                /*Followers of HTML, CSS, and JavaScript*/
+                <span>/* Followers of HTML, CSS, and JavaScript */</span>
             </h1>
         </header>
         <nav>
-            <table>
-                <tr>
-                    <td>
+            <ul><!--redo nav section. It is not okay.-->
+                    <li>
                         <a href="#home">Home</a>
-                    </td>
-                    <td>
+                    </li>
+                    <li>
                         <a href="#recommended_resources">Recommended resources</a>
-                    </td>
-                    <td>
+                    </li>
+                    <li>
                         <a href="#go_to_tests">Go to tests</a>
-                    </td>
-                    <td>
+                    </li>
+                    <li>
                         <a href="#contact_information">Contact information</a>
-                    </td>
-                </tr>
-            </table>
+                    </li>
+            </ul>
         </nav>
         <main>
             <h2 id="home">
@@ -49,27 +48,27 @@
                 <h3>
                     Here are the most necessary resources:
                 </h3>
-                <ul>
+                <ul id="main_resources">
                     <li>
                         <a href="https://www.w3schools.com/">
-                            <img src="icons/w3schools_logo.png" alt="w3 school icon" height="127">
-                        </a> - the most popular HTML online manual.
+                            <img src="icons/w3schools_logo.png" alt="w3 school icon">
+                        </a><br> - the most popular HTML online manual.
                     </li>
                     <li>
                         <a href="https://c9.io">
-                            <img src="icons/c9.png" alt="c9 icon" height="127">
-                        </a> - allows to connect your repositories from github and edit them online. It's known to be slow, but if you do not have enough experience of
+                            <img src="icons/c9.png" alt="c9 icon">
+                        </a><br>- allows to connect your repositories from github and edit them online. It's known to be slow, but if you do not have enough experience of
                         git using, it is an easy way to start.
                     </li>
                     <li>
                         <a href="https://github.com/">
-                            <img src="icons/GitHub-Mark.png" alt="github icon" height="127">
-                        </a> - just get used to it.
+                            <img src="icons/GitHub-Mark.png" alt="github icon">
+                        </a><br> - just get used to it.
                     </li>
                     <li>
                         <a href="https://career.softserveinc.com/en-us/technology">
-                            <img src="icons/SS-IT-academy.png" alt="softserve IT academy icon" height="127">
-                        </a> - to monitor softserve courses availability;).
+                            <img src="icons/SS-IT-academy.png" alt="softserve IT academy icon">
+                        </a><br> - to monitor softserve courses availability;).
                     </li>
                 </ul>
                 <h3>
@@ -117,7 +116,7 @@
                             <li>
                                 <a href="https://www.freecodecamp.org/challenges/create-a-text-field">
                                     FreeCodeCamp
-                                </a> - HTML trainer.
+                                </a> - HTML, CSS, and JavaScript trainer.
                             </li>
                         </ol>
                     </li>
@@ -130,30 +129,82 @@
                                 </a> - allows you to check css code whether it contains syntax errors.
                             </li>
                             <li>
+                                <a href="http://getbem.com/naming/">
+                                    Block element modifier
+                                </a> - describes an approach of naming in HTML and CSS
+                            </li>
+                            <li>
                                 <a href="https://flukeout.github.io/">
                                     CSS diner
-                                </a> - CSS trainer.
+                                </a> - CSS selectors trainer.
                             </li>
                             <li>
                                 <a href="https://flexboxfroggy.com/">
                                     Flexbox Froggy
-                                </a> - CSS trainer.
+                                </a> - CSS flexbox trainer.
                             </li>
                             <li>
                                 <a href="http://www.flexboxdefense.com/">
-                                    Flexbox Fense
-                                </a> - CSS trainer.
+                                    Flexbox Defense
+                                </a> - CSS flexbox trainer.
+                            </li>
+                            <li>
+                                <a href="https://cssgridgarden.com/">
+                                    Grid Garden
+                                </a> - CSS grid trainer.
                             </li>
                             <li>
                                 <a href="https://specificity.keegan.st/">
                                     Specificity Calculator
                                 </a> - a visual way to understand CSS specificity.
                             </li>
+                            <li>
+                                <a href="https://codepen.io/elad2412/pen/hBaqo">
+                                    PURE CSS GAME - NO JS
+                                </a> - contains examples of games written on pure CSS code.
+                            </li>
+                            <li>
+                                <a href="http://learnlayout.com/">
+                                    Learn CSS Layout
+                                </a> - this site teaches the CSS fundamentals that are used in any website's layout.
+                            </li>
+                            <li>
+                                <a href="https://css-tricks.com/">
+                                    CSS-Tricks
+                                </a> - teaches you life hacks about how to manage problems with CSS.
+                            </li>
+                            <li>
+                                <a href="https://autoprefixer.github.io/">
+                                    Autoprefixer CSS online
+                                </a> - autoprefixer is a PostCSS plugin which parse your CSS and add vendor prefixes.
+                            </li>
+                            <li>
+                                <a href="https://gridbyexample.com/">
+                                    Grid by example
+                                </a> - this site is a collection of examples, video and other information to help you learn CSS Grid Layout.
+                                Developed and maintained by Rachel Andrew.
+                            </li>
+                            <li>
+                                <a href="https://meyerweb.com/eric/tools/css/reset/">
+                                    CSS Tools: Reset CSS
+                                </a> - allows to reset default browser's style.
+                            </li>
+                            <li>
+                                <a href="https://meyerweb.com/eric/tools/css/reset/">
+                                    Normalize.css
+                                </a> - makes browsers render all elements more consistently and in line with modern standards.
+                                It precisely targets only the styles that need normalizing.
+                            </li>
                         </ol>
                     </li>
                     <li>
                         JavaScript
                         <ol>
+                            <li>
+                                <a href="http://www.objectplayground.com/">
+                                    Object playground
+                                </a> - about OOP into JS.
+                            </li>
 
                         </ol>
                     </li>
@@ -185,6 +236,11 @@
                                     ColorMania
                                 </a> - ColorMania is an advanced color picker utility. Main feature - Onscreen Eyedropper (Color grabber).
                             </li>
+                            <li>
+                                <a href="https://programmingmentor.com/">
+                                    Programming mentor
+                                </a> - the web page of our admired mentor ;).
+                            </li>
                         </ol>
                     </li>
                 </ul>
@@ -201,7 +257,7 @@
             <p>
                 Do not cheat!
                 <br>
-                <img src="pictures/the_big_brother.jpg" alt="the big brother">
+                <img id="theBigBrother" src="pictures/the_big_brother.jpg" alt="the big brother">
             </p>
 
             <h2 id="contact_information">
@@ -212,20 +268,20 @@
                 <br>
                 Email me at 10a014k@gmail.com
             </p>
-            <form method="POST" action="https://formspree.io/10a014k@gmail.com">
+            <form id="formId" method="POST" action="https://formspree.io/10a014k@gmail.com">
                 <fieldset>
                     <legend>
                         Have you got any questions, remarks, or wishes?
                     </legend>
                     <label>
-                        <span title="Required field">*</span>
+                        <span class="requiredFieldClass" title="Required field">*</span>
                     </label>
                     <label>
                         Your First Name:<input type="text" name="user's_first_name" placeholder="Your First Name" required>
                     </label>
                     <br>
                     <label>
-                        <span title="Required field">*</span>
+                        <span class="requiredFieldClass" title="Required field">*</span>
                     </label>
                     <label>
                         Your Second Name:<input type="text" name="user's_second_name" placeholder="Your Second Name" required>
@@ -236,7 +292,7 @@
                     </label>
                     <br>
                     <label>
-                        <span title="Required field">*</span>
+                        <span class="requiredFieldClass" title="Required field">*</span>
                         <!--When a text is hooked in a <span> element, you can style it with CSS, or manipulate it with JavaScript.-->
                     </label>
                     <label>

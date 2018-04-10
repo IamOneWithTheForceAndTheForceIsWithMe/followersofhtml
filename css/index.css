@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes');
+:root{
+    font-size: 16px;
+}
+body{
+    font-family: 'Noto Serif', serif;
+    background-image: url('pictures/seamless_background.png');
+}
+header h1 span{
+    font-family: 'Great Vibes', cursive;
+    word-spacing: 16px;
+}
+header{
+    text-align: center;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+nav ul li{
+    display: inline;
+    margin-left: 20px;
+}
+#main_resources li{
+    margin-bottom: 20px;
+}
+#theBigBrother{
+    width: 100%;
+    height: auto;
+}
+#formId{
+    background-image: url("pictures/do-alpha.php.png");
+}
+span.requiredFieldClass{
+    color: red;
+}
+span.requiredFieldClass:hover{
+    color: red;
+    font-size: 1.5em;
+}
+@media (min-width: 600px) {
+    body{
+        margin: auto;
+        max-width: 980px;
+    }
+}
