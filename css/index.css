@@ -5,33 +5,196 @@
 }
 body{
     font-family: 'Noto Serif', serif;
-    background-image: url('pictures/seamless_background.png');
+    background-image: url("backgrounds/Webp.net-resizeimage.png");
 }
+#headerId{
+    min-height: 335px;
+    background-color: rgba(254,129,223,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    border-radius: 15px 50px 30px;
+    border: 2px solid darkblue;
+    margin-bottom: 16px;
+}
+#headerId img{
+    position: absolute;
+    z-index: -1;
+    border-radius: 15px 50px 30px;
+    width: 100%;
+    height: auto;
+}
+
 header h1 span{
     font-family: 'Great Vibes', cursive;
     word-spacing: 16px;
 }
-header{
-    text-align: center;
-}
-nav ul{
+#navId{
     display: flex;
+    justify-content: center;
+    position: relative;
+}
+#navId #menuId{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background-color: rgba(255,255,255,0);
+}
+#navUlId{
+    text-align: center;
+    display: none;
+    list-style-type: none;
+    padding-left: 0;
+}
+#navUlId li{
+    margin: 10px;
+    background-color: mediumpurple;
+    border: 1px solid red;
+    box-shadow: 2px 2px grey;
+}
+#navUlId li:hover{
+    box-shadow: none;
+}
+#navUlId li a{
+    text-decoration: none;
+    color: black;
+}
+main #introId{
+    text-align: center;
+    box-shadow: 10px 10px grey;
+    border: 2px solid crimson;
+    background-color: azure;
+    margin-top: 48px;
+}
+main h2, h3{
+    text-align: center;
+    text-shadow: 2px 2px red;
+}
+main #carouselHeadId{
+    margin-bottom: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 100%;
+    background: linear-gradient(to bottom left, mediumorchid, white);
+}
+main #carouselId{
+    position: relative;
+    border: 2px solid purple;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    background-color: mediumpurple;
 }
-nav ul li{
-    display: inline;
-    margin-left: 20px;
+main #carouselId img{
+    width: 100%;
+    height: auto;
 }
-#main_resources li{
-    margin-bottom: 20px;
+main #carouselId span.carouselTextClass{
+    display: block;
+    text-align: center;
+    background: linear-gradient(mediumpurple, white);
+    min-height: 44px;
+    padding-top: 4px;
 }
+main #carouselId button{
+    background-color: rgba(255,255,255,0);
+    border: none;
+    position: absolute;
+    overflow: hidden;
+}
+#leftArrowId{
+    left: 0;
+    height: 100%;
+}
+#leftArrowId img{
+    max-width: 50px;
+}
+#rightArrowId{
+    right: 0;
+    height: 100%;
+}
+#rightArrowId img{
+    max-width: 50px;
+}
+main #carouselId div:nth-of-type(1){
+    display: initial;
+}
+main #carouselId div:nth-of-type(2){
+    display: none;
+}
+main #carouselId div:nth-of-type(3){
+     display: none;
+}
+main #carouselId div:nth-of-type(4){
+    display: none;
+}
+main #carouselId .carouselItemClass{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+@-webkit-keyframes fade {
+     from {opacity: 0.1}
+     to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: 0.1}
+    to {opacity: 1}
+}
+main #linksListId{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+main button.listButtonClass{
+    background-color: azure;
+    border: 1px solid crimson;
+    box-shadow: 2px 2px grey;
+}
+main button.listButtonClass:hover{
+    background-color: azure;
+    border: 1px solid crimson;
+    box-shadow: none;
+}
+main ol.listItemClass{
+    padding-left: 17px;
+    display: none;
+}
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
 #theBigBrother{
     width: 100%;
     height: auto;
 }
 #formId{
-    background-image: url("pictures/do-alpha.php.png");
+    background-image: url("backgrounds/question_mark.png");
 }
 span.requiredFieldClass{
     color: red;
@@ -43,6 +206,6 @@ span.requiredFieldClass:hover{
 @media (min-width: 600px) {
     body{
         margin: auto;
-        max-width: 980px;
+        max-width: 855px;
     }
 }
